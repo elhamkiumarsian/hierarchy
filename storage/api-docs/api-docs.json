@@ -1,0 +1,131 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "This is Deputy API",
+        "description": "Api description...",
+        "termsOfService": "",
+        "contact": {
+            "email": "elhamkiumarsian@gmail.com"
+        },
+        "license": {
+            "name": "Private License",
+            "url": "URL to the license"
+        },
+        "version": "1.0.0"
+    },
+    "host": "api.host.com",
+    "basePath": "/",
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/roles": {
+            "get": {
+                "description": "Display a listing of the roles.",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Missing Data"
+                    }
+                }
+            },
+            "post": {
+                "description": "Store a newly created role in storage.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "parent",
+                        "in": "query",
+                        "description": "parent",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Missing Data"
+                    }
+                }
+            }
+        },
+        "/users": {
+            "get": {
+                "description": "Display a listing of the users.",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Missing Data"
+                    }
+                }
+            },
+            "post": {
+                "description": "Store a newly created user in storage.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "name",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "role",
+                        "in": "query",
+                        "description": "role",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Missing Data"
+                    }
+                }
+            }
+        },
+        "/users/{user_id}": {
+            "get": {
+                "description": "Display the specified resource",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "user id",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Missing Data"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {},
+    "externalDocs": {
+        "description": "Find out more about my website",
+        "url": "http..."
+    }
+}
