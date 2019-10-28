@@ -8,7 +8,8 @@
 </p>
 
 ## setup Users hierarchy project
-Clone the project: $ git colne git@github.com:elhamkiumarsian/hierarchy.git
+Clone the project: 
+$ git colne git@github.com:elhamkiumarsian/hierarchy.git
 Run composer install
 Setup your mysql database with name= hierarchy
 
