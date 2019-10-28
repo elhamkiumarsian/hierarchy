@@ -27,6 +27,6 @@ make sure you edit credentials in app/config/database.php to match yours:
  
  ## documentation
  for see the Swagger documentation you can open below url
- http://127.0.0.1:8000/api/documentation
+ - http://127.0.0.1:8000/api/documentation
  
 
