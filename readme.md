@@ -14,9 +14,11 @@ Run composer install
 Setup your mysql database with name= hierarchy
 
 ## Database Models and Migrations
--For the purposes of this task, we will be using mysql. 
--Rename file env.Example to .env
--php artisan config:cache 
+- For the purposes of this task, we will be using mysql. 
+- Rename file env.Example to .env
+- php artisan config:cache 
+- To run all of your outstanding migrations, execute the migrate Artisan command:
+- php artisan migrate
 
 
 make sure you edit credentials in app/config/database.php to match yours:
